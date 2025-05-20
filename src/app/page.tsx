@@ -1,5 +1,3 @@
-import LinkButton from '@/components/LinkButton';
-import TechExpItem from '@/components/TechExpItem';
 import {
   SiExpress,
   SiMongodb,
@@ -21,22 +19,21 @@ import {
   SiMysql,
   SiPostgresql,
   SiFlask,
-  SiTailwindcss
+  SiTailwindcss,
+  SiHono,
+  SiGithub,
 } from 'react-icons/si';
 import { DiJava } from 'react-icons/di';
-import TextInput from '@/components/TextInput';
-import TextAreaInput from '@/components/TextAreaInput';
+import TechExpItem from '@/components/TechExpItem';
+import Navbar from '@/components/Navbar';
+import LinkButton from '@/components/LinkButton';
+import LinkButtonFilled from '@/components/LinkButtonFilled';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   return (
     <div>
-      <header className="bg-[#FF9770]">
-        <nav className="flex text-2xl text-gray-900 font-semibold gap-10 justify-end pt-10 px-20">
-          <LinkButton href="/" text="Projects" />
-          <LinkButton href="/" text="Blog" />
-          <LinkButton href="/" text="Contact Me" />
-        </nav>
-      </header>
+      <Navbar />
       <section className="p-20 bg-[#FF9770] text-gray-900">
         <div className=" grid grid-flow-col text-right">
           <div className="p-10 flex flex-col justify-center">
@@ -48,8 +45,13 @@ export default function Home() {
               seamless design. Explore my work to see how I can bring your
               vision to life.
             </p>
+            <div className="flex justify-end items-center gap-10 m-5">
+              <LinkButton href="/" text="Projects" />
+              <LinkButtonFilled icon={SiGithub} href="/" text="Github" />
+            </div>
           </div>
           <img
+            draggable="false"
             className="w-7xl"
             src="Hand-coding-pana.svg"
             alt="A person programming on the computer"
@@ -59,6 +61,7 @@ export default function Home() {
       <section className="p-20 bg-[#92e3a9]">
         <div className="grid grid-cols-3 items-center">
           <img
+            draggable="false"
             className="w-2xl flex"
             src="Hand-coding-bro.svg"
             alt="A person programming on the computer"
@@ -86,6 +89,7 @@ export default function Home() {
                 <TechExpItem text="NodeJS" icon={SiNodedotjs} />
                 <TechExpItem text="Express" icon={SiExpress} />
                 <TechExpItem text="Flask" icon={SiFlask} />
+                <TechExpItem text="Hono" icon={SiHono} />
                 <TechExpItem text="MongoDB" icon={SiMongodb} />
                 <TechExpItem text="Mongoose" icon={SiMongoose} />
                 <TechExpItem text="My SQL" icon={SiMysql} />
@@ -103,14 +107,7 @@ export default function Home() {
         </div>
       </section>
       <section className="p-20 bg-[#3D315B] text-white grid grid-flow-col gap-20">
-        <div className="flex text-gray-900 flex-col bg-white rounded-md p-10 gap-3">
-          <h3 className="font-bold text-4xl pb-5">Contact Form</h3>
-          <form className="flex flex-col gap-2">
-            <TextInput placeholder="Email" />
-            <TextInput placeholder="Subject" />
-            <TextAreaInput placeholder="Message" />
-          </form>
-        </div>
+        <ContactForm />
         <div>
           <h3 className="text-5xl pb-5 font-bold">Quick Connect</h3>
           <div className="flex gap-3">

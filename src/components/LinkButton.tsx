@@ -6,7 +6,7 @@ interface LinkButtonProps{
 }
 
 export default function LinkButton ({href, text} : LinkButtonProps){
-    return <div>
-        <Link href={href}>{text}</Link>
-    </div>
+    return <>
+        <Link className="text-2xl text-gray-900 font-semibold" href={href}>{text}</Link>
+    </>
 } 
