@@ -43,3 +43,9 @@ next-env.d.ts
 #Editor Files
 .vscode/
 .idea/
+
+#CF Workers
+.dev.vars
+
+.open-next
+.wrangler
