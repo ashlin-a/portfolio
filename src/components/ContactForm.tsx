@@ -23,12 +23,16 @@ export default function ContactForm() {
         onSubmit={async (e) => {
           e.preventDefault();
           setIsLoading(true);
-          await sendMail(name, email, message);
-          setIsLoading(false);
+
+          const result = await sendMail(name, email, message);
+          if (result) {
+            setIsLoading(false);
           setName('');
           setEmail('');
           setMessage('');
           setInfo(true)
+          }
+          setIsLoading(false)
         }}
       >
         <TextInput
