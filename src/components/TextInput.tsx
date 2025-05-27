@@ -1,10 +1,5 @@
-interface TextInputProps {
-  placeholder: string;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  required?: boolean;
-  type: string;
-  value: string;
-}
+import { TextInputProps } from "@/types";
+
 
 export default function TextInput({
   placeholder,

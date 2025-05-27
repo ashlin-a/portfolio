@@ -1,11 +1,4 @@
-import { IconType } from "react-icons"
-
-interface FormButtonProps{
-    text: string,
-    icon?: IconType,
-    type?: "submit" | "reset" | "button",
-    disabled?: boolean
-}
+import { FormButtonProps } from "@/types"
 
 export default function FormButton ({ text, icon:Icon, type, disabled} : FormButtonProps){
     return <>

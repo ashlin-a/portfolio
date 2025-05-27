@@ -1,9 +1,4 @@
-import { IconType } from 'react-icons';
-
-interface TechExpItemProps {
-    text: string;
-    icon: IconType;
-}
+import { TechExpItemProps } from '@/types';
 
 export default function TechExpItem({ text, icon: Icon }: TechExpItemProps) {
     return (

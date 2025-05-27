@@ -1,11 +1,5 @@
+import { LinkButtonProps } from "@/types";
 import Link from "next/link";
-import { IconType } from "react-icons";
-
-interface LinkButtonProps{
-    href: string,
-    text: string,
-    icon: IconType
-}
 
 export default function LinkButton ({href, text, icon: Icon} : LinkButtonProps){
     return <>

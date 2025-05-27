@@ -10,15 +10,19 @@ export async function sendMail(name: string, email: string, message: string) {
     const body = `<html>Hey, <strong>${name}</strong> (${email}) has messaged you this:
     <p>${message}</p></html>`;
 
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: 'portfolio@email.ashlin.dev',
       to: 'code@ashlin.dev',
       subject: 'Portfolio Contact Form',
       html: body,
     });
+    if (result.error){
+      console.error("Failed to send email:", result.error)
+      return false
+    }
     return true
   } catch (error) {
-    console.error('Failed to send Email:', error);
+    console.error('Something went wrong', error);
     return false
   }
 }

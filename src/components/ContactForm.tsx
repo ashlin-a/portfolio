@@ -8,6 +8,8 @@ import TextAreaInput from './TextAreaInput';
 import TextInput from './TextInput';
 import { useState } from 'react';
 import { sendMail } from '@/lib/sendMail';
+import InfoBox from './InfoBox';
+import { InfoType } from '@/types';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
@@ -15,6 +17,7 @@ export default function ContactForm() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [info, setInfo] = useState(false);
+  const [infoType, setInfoType] = useState<InfoType>('error');
   return (
     <div className="flex text-gray-900 flex-col bg-white rounded-md p-10 gap-3">
       <h3 className="font-bold text-4xl pb-5">Contact Form</h3>
@@ -30,8 +33,10 @@ export default function ContactForm() {
           setName('');
           setEmail('');
           setMessage('');
+          setInfoType('success')
           setInfo(true)
           }
+          setInfo(true)
           setIsLoading(false)
         }}
       >
@@ -64,7 +69,8 @@ export default function ContactForm() {
             setInfo(false)
           }}
         />
-        {info && <div className='flex text-green-700 justify-center items-center'><FaCircleInfo/><p>Your Message was sent successfully!</p></div>}
+        {info && <InfoBox icon={FaCircleInfo} type={infoType}/>}
+        
         <FormButton
           disabled={isLoading}
           type="submit"

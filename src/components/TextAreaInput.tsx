@@ -1,9 +1,4 @@
-interface TextAreaInputProps {
-    placeholder: string,
-    onChange?: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
-    required?: boolean,
-    value: string
-}
+import { TextAreaInputProps } from "@/types";
 
 export default function TextAreaInput({ placeholder, onChange,required, value }: TextAreaInputProps) {
     return (
