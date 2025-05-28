@@ -9,6 +9,7 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <header className="bg-[#FF9770] text-gray-900 sticky top-0 z-20">
       <nav
@@ -31,9 +32,19 @@ export default function Navbar() {
               : 'hidden opacity-0 -translate-y-4'
           } lg:flex lg:flex-row lg:opacity-100 lg:translate-y-0 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute lg:static top-full left-0 w-full lg:w-auto bg-[#FF9770] lg:bg-transparent px-6 py-4 lg:p-0 z-10 items-center lg:items-center lg:justify-end min-h-[calc(100vh-4rem)] lg:min-h-0 transition-all duration-300 ease-in-out`}
         >
-          <LinkButton href="https://github.com/ashlin-a/" text="Projects" icon={FaFolder} />
-          {/* <LinkButton href="/" text="Blog" icon={FaBlog} /> */}
-          <LinkButton href="#contact" text="Contact Me" icon={FaEnvelope} />
+          <LinkButton
+            href="https://github.com/ashlin-a/"
+            text="Projects"
+            icon={FaFolder}
+            onClick={toggleMenu}
+          />
+          {/* <LinkButton href="/" text="Blog" icon={FaBlog} onClick={toggleMenu} /> */}
+          <LinkButton
+            href="#contact"
+            text="Contact Me"
+            icon={FaEnvelope}
+            onClick={toggleMenu}
+          />
         </div>
       </nav>
     </header>

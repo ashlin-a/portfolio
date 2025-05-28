@@ -11,6 +11,7 @@ export interface LinkButtonProps {
   href: string;
   text: string;
   icon: IconType;
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
 export interface TechExpItemProps {
