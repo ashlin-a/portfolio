@@ -7,9 +7,12 @@ export interface InfoBoxProps {
 
 export type InfoType = 'success' | 'error';
 
-export interface LinkButtonProps {
+export interface BaseLinkProps {
   href: string;
   text: string;
+}
+
+export interface LinkButtonProps extends BaseLinkProps {
   icon: IconType;
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
