@@ -1,4 +1,4 @@
-import { SiGithub, SiReact } from 'react-icons/si';
+import { SiGithub } from 'react-icons/si';
 import { HiOutlineDocumentDownload } from 'react-icons/hi';
 import LinkButton from './LinkButton';
 import LinkButtonFilled from './LinkButtonFilled';
@@ -26,7 +26,7 @@ const IntroSection = () => {
               href="https://github.com/ashlin-a/"
               text="Github"
             />
-            {/* <LinkButton icon={HiOutlineDocumentDownload} href="/" text="Resume" /> */}
+            <LinkButton icon={HiOutlineDocumentDownload} href="https://files.ashlin.dev/Ashlin-Resume.pdf" text="Resume" />
           </div>
         </div>
         <div className="flex justify-center lg:justify-end col-span-1">
