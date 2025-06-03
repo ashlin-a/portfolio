@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 const ContactSection = () => {
   return (
     <section id='contact'
-      className="p-4 sm:p-6 md:p-10 lg:p-20 bg-gray-800 text-white"
+      className="p-4 sm:p-6 md:p-10 lg:p-20 bg-zinc-800 text-white"
       aria-label="Contact Information"
     >
       <div className="grid grid-cols-1 lg:grid-flow-col lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-20 max-w-7xl mx-auto">

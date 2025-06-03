@@ -10,7 +10,7 @@ export default function InfoBox({ icon: Icon, type }: InfoBoxProps) {
     );
   } else {
     return (
-      <div className={'flex p-3 items-center gap-2 justify-center bg-red-600/30 rounded-sm text-gray-900 font-semibold'}>
+      <div className={'flex p-3 items-center gap-2 justify-center bg-red-600/30 rounded-sm text-zinc-900 font-semibold'}>
         <Icon className='text-lg' />
         {'Failed to deliver message'}
       </div>

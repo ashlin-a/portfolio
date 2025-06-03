@@ -13,7 +13,7 @@ export default function TextAreaInput({
         rows={5}
         onChange={onChange}
         required={required}
-        className="p-3 transition-all rounded-md appearance-none border-2 border-gray-400 hover:border-gray-500 focus:border-gray-700 outline-none w-full"
+        className="p-3 transition-all rounded-md appearance-none border-2 border-zinc-400 hover:border-zinc-500 focus:border-zinc-700 outline-none w-full"
         placeholder={placeholder}
       />
     </div>

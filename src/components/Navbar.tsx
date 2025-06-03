@@ -11,14 +11,14 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-[#FF9770] text-gray-900 sticky top-0 z-20">
+    <header className="bg-[#FF9770] text-zinc-900 sticky top-0 z-20">
       <nav
         className="flex items-center justify-between px-6 py-4 sm:px-8 sm:py-5 md:px-12 md:py-6 lg:px-20 lg:py-8 max-w-7xl mx-auto"
         aria-label="Main navigation"
       >
         <div className="text-2xl md:text-3xl font-bold">Portfolio</div>
         <button
-          className="lg:hidden text-2xl focus:outline-none focus:ring-2 focus:ring-gray-900 rounded p-2"
+          className="lg:hidden text-2xl focus:outline-none focus:ring-2 focus:ring-zinc-900 rounded p-2"
           onClick={toggleMenu}
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isOpen}
