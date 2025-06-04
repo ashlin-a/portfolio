@@ -14,7 +14,7 @@ export default function TextInput({
         type={type}
         onChange={onChange}
         required={required}
-        className="p-3 rounded-md transition-all appearance-none border-2 border-zinc-400 hover:border-zinc-500 focus:border-zinc-700 outline-none w-full"
+        className="p-3 transition-all rounded-md appearance-none border-2 border-dark-txt/30 hover:border-dark-txt/50 focus:border-dark-txt/70 outline-none w-full"
         placeholder={placeholder}
       />
     </div>

@@ -19,7 +19,7 @@ export default function ContactForm() {
   const [info, setInfo] = useState(false);
   const [infoType, setInfoType] = useState<InfoType>('error');
   return (
-    <div className="flex text-zinc-900 flex-col bg-white rounded-md p-10 gap-3">
+    <div className="flex text-dark-txt flex-col bg-light-txt rounded-md p-10 gap-3">
       <h3 className="font-bold text-4xl pb-5">Contact Form</h3>
       <form
         className="flex flex-col gap-2"

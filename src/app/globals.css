@@ -11,5 +11,7 @@
   --color-secondary: #92e3a9;
   --color-tertiary: oklch(27.4% 0.006 286.033);
   --color-dark-txt: oklch(21% 0.006 285.885);
-  --color-light-txt: #ffffff
+  --color-light-txt: #ffffff;
+  --color-success: oklch(62.7% 0.194 149.214);
+  --color-error:  oklch(57.7% 0.245 27.325);
 }

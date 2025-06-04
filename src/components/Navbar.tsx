@@ -18,7 +18,7 @@ export default function Navbar() {
       >
         <div className="text-2xl md:text-3xl font-bold">Portfolio</div>
         <button
-          className="lg:hidden text-2xl focus:outline-none focus:ring-2 focus:ring-zinc-900 rounded p-2"
+          className="lg:hidden text-2xl focus:outline-none focus:ring-2 focus:ring-dark-txt rounded p-2"
           onClick={toggleMenu}
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isOpen}
@@ -30,7 +30,7 @@ export default function Navbar() {
             isOpen
               ? 'flex flex-col opacity-100 translate-y-0'
               : 'hidden opacity-0 -translate-y-4'
-          } lg:flex lg:flex-row lg:opacity-100 lg:translate-y-0 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute lg:static top-full left-0 w-full lg:w-auto bg-[#FF9770] lg:bg-transparent px-6 py-4 lg:p-0 z-10 items-center lg:items-center lg:justify-end min-h-[calc(100vh-4rem)] lg:min-h-0 transition-all duration-300 ease-in-out`}
+          } lg:flex lg:flex-row lg:opacity-100 lg:translate-y-0 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute lg:static top-full left-0 w-full lg:w-auto bg-primary lg:bg-transparent px-6 py-4 lg:p-0 z-10 items-center lg:items-center lg:justify-end min-h-[calc(100vh-4rem)] lg:min-h-0 transition-all duration-300 ease-in-out`}
         >
           <NavLink
             href="https://github.com/ashlin-a/"
