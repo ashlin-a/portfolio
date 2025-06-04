@@ -6,7 +6,7 @@ import LinkButtonFilled from './LinkButtonFilled';
 const IntroSection = () => {
   return (
     <section
-      className="p-4 sm:p-6 md:p-10 lg:p-20 w-[100vw] bg-[#FF9770] text-zinc-900"
+      className="p-4 sm:p-6 md:p-10 lg:p-20 w-[100vw] bg-primary text-dark-txt"
       aria-label="Introduction Section"
     >
       <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col lg:items-center lg:text-right text-center gap-6 max-w-7xl mx-auto">
