@@ -9,7 +9,7 @@ import TextInput from './TextInput';
 import { useState } from 'react';
 import { sendMail } from '@/lib/sendMail';
 import InfoBox from './InfoBox';
-import { InfoBoxProps, InfoType } from '@/types';
+import { InfoBoxProps } from '@/types';
 import { contactFormSchema } from '@/lib/schema';
 import { z } from 'zod/v4';
 
@@ -19,7 +19,6 @@ export default function ContactForm() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [info, setInfo] = useState(false);
-  const [infoType, setInfoType] = useState<InfoType>('error');
   const [infoBox, setInfoBox] = useState<InfoBoxProps>({
     messages: [],
     type: 'error',
@@ -60,11 +59,12 @@ export default function ContactForm() {
               icon: FaCircleInfo,
             });
             setInfo(true);
+            setIsLoading(false)
             return;
           }
 
           const result = await sendMail(name, email, message);
-          if (result) {
+          if (result.success) {
             setIsLoading(false);
             setName('');
             setEmail('');
@@ -120,7 +120,7 @@ export default function ContactForm() {
           <InfoBox
             icon={FaCircleInfo}
             messages={infoBox?.messages}
-            type={infoType}
+            type={infoBox.type}
           />
         )}
 

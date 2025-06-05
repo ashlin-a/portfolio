@@ -8,8 +8,6 @@ export interface InfoBoxProps {
   messages: string[];
 }
 
-export type InfoType = 'success' | 'error';
-
 export interface BaseLinkProps {
   href: string;
   text: string;
