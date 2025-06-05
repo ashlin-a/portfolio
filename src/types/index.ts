@@ -1,8 +1,11 @@
+import { z } from "zod/v4";
 import { IconType } from 'react-icons';
+import { contactFormSchema } from "@/lib/schema";
 
 export interface InfoBoxProps {
   type: 'success' | 'error';
   icon: IconType;
+  messages: string[];
 }
 
 export type InfoType = 'success' | 'error';
@@ -43,3 +46,5 @@ export interface FormButtonProps {
   type?: 'submit' | 'reset' | 'button';
   disabled?: boolean;
 }
+
+export type ContactFormType = z.infer<typeof contactFormSchema>;
