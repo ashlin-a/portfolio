@@ -8,7 +8,7 @@ const ContactSection = () => {
       className="p-4 sm:p-6 md:p-10 lg:p-20 bg-tertiary text-light-txt"
       aria-label="Contact Information"
     >
-      <div className="grid grid-cols-1 lg:grid-flow-col lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-20 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 intersect-once intersect:motion-preset-slide-up lg:grid-flow-col lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-20 max-w-7xl mx-auto">
         <ContactForm />
         
         <div className="flex flex-col gap-4 md:gap-5">

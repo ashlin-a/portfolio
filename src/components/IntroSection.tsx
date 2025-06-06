@@ -9,7 +9,7 @@ const IntroSection = () => {
       className="p-4 sm:p-6 md:p-10 lg:p-20 w-[100vw] bg-primary text-dark-txt"
       aria-label="Introduction Section"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-flow-col lg:items-center lg:text-right text-center gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 intersect-once intersect:motion-preset-slide-up lg:grid-cols-3 lg:grid-flow-col lg:items-center lg:text-right text-center gap-6 max-w-7xl mx-auto">
         <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col lg:col-span-2 lg:justify-center">
           <h3 className="font-bold text-3xl sm:text-4xl md:text-5xl pb-4 md:pb-5">
             Welcome, I’m Ashlin

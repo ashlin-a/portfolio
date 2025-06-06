@@ -28,7 +28,7 @@ import TechExpItem from '@/components/TechExpItem';
 const ProgrammingSkillSection = () => {
   return (
     <section className="p-4 sm:p-6 md:p-10 lg:p-20 text-dark-txt bg-secondary" aria-label="Programming Skills">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto items-center">
+      <div className="grid grid-cols-1 intersect-once intersect:motion-preset-slide-up lg:grid-cols-3 gap-6 max-w-7xl mx-auto items-center">
         <div className="flex justify-center lg:justify-start">
           <img
             draggable="false"

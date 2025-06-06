@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "tailwindcss-motion";
+@plugin "tailwindcss-intersect";
 
 @layer base {
   html, body {
