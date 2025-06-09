@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import NavLink from './NavLink';
 
@@ -13,6 +13,27 @@ export default function Navbar() {
   const handleLinkClick = () => {
     setIsOpen(false);
   };
+
+  const handleScroll = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
+  React.useEffect(() => {
+    if (isOpen) {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      document.body.classList.add('overflow-hidden');
+    } else {
+      window.removeEventListener('scroll', handleScroll);
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, [isOpen]);
 
   return (
     <header className="bg-primary text-dark-txt sticky top-0 z-20">
@@ -54,7 +75,7 @@ export default function Navbar() {
       </nav>
 
       <div
-        className={`fixed top-0 left-0 w-full bg-primary z-40 lg:hidden transition-all duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 w-full bg-[#FF9770] z-40 lg:hidden transition-all duration-300 ease-in-out ${
           isOpen
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 -translate-y-full pointer-events-none'
