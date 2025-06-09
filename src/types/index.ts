@@ -13,6 +13,10 @@ export interface BaseLinkProps {
   text: string;
 }
 
+export interface NavLinkProps extends BaseLinkProps{
+  onClick: () => void;
+}
+
 export interface LinkButtonProps extends BaseLinkProps {
   icon: IconType;
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
