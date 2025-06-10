@@ -67,10 +67,10 @@ const ProgrammingSkillSection = () => {
           />
         </div>
         <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col gap-4 md:gap-5 lg:col-span-2">
-          <h3 className="font-bold text-3xl sm:text-4xl md:text-5xl">
+          <h3 className="font-bold text-3xl sm:text-4xl md:text-5xl text-center lg:text-left">
             Programming Skills
           </h3>
-          <p className="font-light text-lg sm:text-xl md:text-2xl">
+          <p className="font-light text-lg sm:text-xl md:text-2xl text-center lg:text-left">
             I specialize in modern frameworks and tools to build fast,
             user-friendly websites and apps. Here’s the tech I work with to
             create smooth experiences and reliable solutions.
