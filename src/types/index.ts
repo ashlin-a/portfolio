@@ -1,6 +1,6 @@
-import { z } from "zod/v4";
+import { z } from 'zod/v4';
 import { IconType } from 'react-icons';
-import { contactFormSchema } from "@/lib/schema";
+import { contactFormSchema } from '@/lib/schema';
 
 export interface InfoBoxProps {
   type: 'success' | 'error';
@@ -13,7 +13,7 @@ export interface BaseLinkProps {
   text: string;
 }
 
-export interface NavLinkProps extends BaseLinkProps{
+export interface NavLinkProps extends BaseLinkProps {
   onClick: () => void;
 }
 
@@ -40,6 +40,10 @@ export interface TextAreaInputProps extends BaseInputProps {
 export interface TextInputProps extends BaseInputProps {
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   type: string;
+}
+
+export interface ImageSliderProps {
+  imgUrls: string[];
 }
 
 export interface FormButtonProps {
