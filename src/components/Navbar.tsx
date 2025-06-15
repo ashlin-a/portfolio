@@ -62,7 +62,7 @@ export default function Navbar() {
 
         <div className="hidden lg:flex lg:flex-row gap-10 items-center">
           <NavLink
-            href="https://github.com/ashlin-a/"
+            href="#projects"
             text="Projects"
             onClick={handleLinkClick}
           />

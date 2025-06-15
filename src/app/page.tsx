@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <IntroSection />
       <ProgrammingSkillSection />
-      {/* <ProjectSection /> */}
+      <ProjectSection />
       <ContactSection />
       <Footer/>
     </>
