@@ -5,9 +5,7 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blue?style=for-the-badge&logo=cloudflare)](https://ashlin.dev/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/ashlin-a/portfolio)
 
-<div align="center">
-  <img src="./public/portfolio-preview.png" alt="Portfolio Preview" width="800"/>
-</div>
+<img width="1624" alt="Portfolio Preview" src="https://github.com/user-attachments/assets/fdbaa897-7b6d-47d3-8517-ec4a6eb8ce32" />
 
 ## ✨ Features
 
