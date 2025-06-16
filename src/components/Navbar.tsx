@@ -6,6 +6,19 @@ import NavLink from './NavLink';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinks = [
+    {
+      id: 1,
+      href: '#projects',
+      text: 'Projects'
+    },
+    {
+      id: 2,
+      href: '#contact',
+      text: 'Contact Me'
+    }
+  ];
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -61,16 +74,14 @@ export default function Navbar() {
         </button>
 
         <div className="hidden lg:flex lg:flex-row gap-10 items-center">
-          <NavLink
-            href="#projects"
-            text="Projects"
-            onClick={handleLinkClick}
-          />
-          <NavLink
-            href="#contact"
-            text="Contact Me"
-            onClick={handleLinkClick}
-          />
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.id}
+              href={link.href}
+              text={link.text}
+              onClick={handleLinkClick}
+            />
+          ))}
         </div>
       </nav>
 
@@ -93,20 +104,18 @@ export default function Navbar() {
         </div>
 
         <div className="flex flex-col gap-6 px-6 py-8 sm:px-8 md:px-12 items-center">
-          <div className="transition-all duration-300 ease-in-out transform hover:translate-x-2">
-            <NavLink
-              href="https://github.com/ashlin-a/"
-              text="Projects"
-              onClick={handleLinkClick}
-            />
-          </div>
-          <div className="transition-all duration-300 ease-in-out transform hover:translate-x-2">
-            <NavLink
-              href="#contact"
-              text="Contact Me"
-              onClick={handleLinkClick}
-            />
-          </div>
+          {navLinks.map((link) => (
+            <div
+              key={link.id}
+              className="transition-all duration-300 ease-in-out transform hover:translate-x-2"
+            >
+              <NavLink
+                href={link.href}
+                text={link.text}
+                onClick={handleLinkClick}
+              />
+            </div>
+          ))}
         </div>
       </div>
     </header>

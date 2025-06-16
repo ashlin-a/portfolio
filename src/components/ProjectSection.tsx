@@ -18,13 +18,18 @@ const ProjectSection = () => {
   return (
     <section
       className="p-4 sm:p-6 md:p-10 lg:p-20 w-[100vw] bg-primary text-dark-txt"
-      aria-label="Projects Section" id='projects'
+      aria-label="Projects Section"
+      id="projects"
     >
+      <h3 className="font-bold text-3xl sm:text-4xl text-center md:text-5xl md:mb-10">
+        Projects
+      </h3>
       <div className="lg:grid intersect-once intersect:motion-preset-slide-up lg:grid-cols-5 lg:grid-flow-col lg:items-center lg:text-right text-center gap-6 max-w-7xl mx-auto">
         <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col lg:col-span-2 lg:justify-center text-center lg:text-right">
-          <h3 className="font-bold text-3xl sm:text-4xl md:text-5xl pb-4 md:pb-5">
+          <h5 className="font-semibold text-xl sm:text-2xl md:text-3xl pb-4 md:pb-5">
             TSCF Records App
-          </h3>
+          </h5>
+
           <p className="font-light text-lg sm:text-xl md:text-2xl mb-4 md:mb-5">
             I made an app for The Second Chance Foundation, Non Profit
             Organization. Aim of the project was to digitize the manual form
