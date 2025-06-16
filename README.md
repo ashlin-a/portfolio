@@ -1,4 +1,4 @@
-# 🚀 My Portfolio Website
+# My Portfolio Website
 
 > A modern, responsive portfolio website built with Next.js 14 to showcase my development skills and projects.
 
