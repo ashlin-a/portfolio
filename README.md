@@ -89,6 +89,47 @@ Here's how to run it locally:
 
 5. **Open [http://localhost:3000](http://localhost:3000)** in your browser
 
+
+## 🐳 Run with Docker
+
+You can also run the app using Docker and Docker Compose.
+
+### Prerequisites
+
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker Compose](https://docs.docker.com/compose/)
+
+### Steps
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/ashlin-a/portfolio.git
+   cd portfolio
+   ```
+
+2. **Create a `.env` file**
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Add your Resend API key:
+
+   ```env
+   RESEND_API_KEY=your_resend_api_key
+   ```
+
+3. **Build and run using Docker Compose**
+
+   ```bash
+   docker-compose up --build
+   ```
+
+4. **Open [http://localhost:3000](http://localhost:3000)** in your browser
+
+This setup runs the app in development mode using Docker, and hot reload is available if you mount volumes in `docker-compose.yml`.
+
 ## 🎨 Key Technical Implementations
 
 ### Form Validation & Email Integration
