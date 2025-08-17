@@ -21,32 +21,55 @@ import {
   SiFlask,
   SiTailwindcss,
   SiHono,
+  SiCypress,
+  SiWebrtc,
+  SiJest,
+  SiVitest,
+  SiKubernetes,
 } from 'react-icons/si';
 import { DiJava } from 'react-icons/di';
 import TechExpItem from '@/components/TechExpItem';
 
 const listItems = [
+  // Core Languages
+  { text: 'C Lang', icon: SiC },
+  { text: 'Java', icon: DiJava },
+  { text: 'Python', icon: SiPython },
   { text: 'Javascript', icon: SiJavascript },
   { text: 'Typescript', icon: SiTypescript },
-  { text: 'Python', icon: SiPython },
-  { text: 'Java', icon: DiJava },
-  { text: 'C Lang', icon: SiC },
+
+  // Frontend (UI/Styling)
   { text: 'HTML', icon: SiHtml5 },
   { text: 'CSS', icon: SiCss3 },
   { text: 'Bootstrap', icon: SiBootstrap },
   { text: 'Tailwind', icon: SiTailwindcss },
   { text: 'React', icon: SiReact },
   { text: 'NextJs', icon: SiNextdotjs },
+
+  // Backend (Frameworks/Runtimes)
   { text: 'NodeJS', icon: SiNodedotjs },
   { text: 'Express', icon: SiExpress },
-  { text: 'Flask', icon: SiFlask },
   { text: 'Hono', icon: SiHono },
+  { text: 'Flask', icon: SiFlask },
+
+  // Databases & ORMs
   { text: 'MongoDB', icon: SiMongodb },
   { text: 'Mongoose', icon: SiMongoose },
   { text: 'MySQL', icon: SiMysql },
   { text: 'PostgreSQL', icon: SiPostgresql },
   { text: 'Prisma ORM', icon: SiPrisma },
+
+  // Testing
+  { text: 'Vitest', icon: SiVitest },
+  { text: 'Jest', icon: SiJest },
+  { text: 'Cypress', icon: SiCypress },
+
+  // Specialized
+  { text: 'WebRTC', icon: SiWebrtc },
+
+  // DevOps & Cloud
   { text: 'Docker', icon: SiDocker },
+  { text: 'Kubernetes', icon: SiKubernetes },
   { text: 'Cloudflare Workers', icon: SiCloudflareworkers },
   { text: 'Cloudflare Pages', icon: SiCloudflarepages },
 ];
