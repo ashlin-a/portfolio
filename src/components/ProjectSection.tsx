@@ -17,7 +17,7 @@ const ProjectSection = () => {
   ].map((filename) => `${baseUrl}/${filename}`);
   return (
     <section
-      className="p-4 sm:p-6 md:p-10 lg:p-20 w-[100vw] bg-primary text-dark-txt"
+      className="p-4 sm:p-6 md:p-10 scroll-mt-14 lg:p-20 w-[100vw] bg-primary text-dark-txt"
       aria-label="Projects Section"
       id="projects"
     >
