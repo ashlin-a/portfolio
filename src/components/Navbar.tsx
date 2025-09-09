@@ -10,13 +10,18 @@ export default function Navbar() {
     {
       id: 1,
       href: '#projects',
-      text: 'Projects'
+      text: 'Projects',
     },
     {
       id: 2,
+      href: 'https://blog.ashlin.dev',
+      text: 'Blog',
+    },
+    {
+      id: 3,
       href: '#contact',
-      text: 'Contact Me'
-    }
+      text: 'Contact Me',
+    },
   ];
 
   const toggleMenu = () => {

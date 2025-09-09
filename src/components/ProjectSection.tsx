@@ -4,7 +4,7 @@ import LinkButtonFilled from './LinkButtonFilled';
 
 const ProjectSection = () => {
   const baseUrl = 'https://portfolio-files.ashlin.dev';
-  const images = [
+  const tscfImages = [
     'login-page.png',
     'login-page-dark.png',
     '1.png',
@@ -15,15 +15,22 @@ const ProjectSection = () => {
     '4.png',
     '4-dark.png',
   ].map((filename) => `${baseUrl}/${filename}`);
+  const blogImages = [
+    'blog-home.png',
+    'post-startpage.png',
+    'post-preview-1.png',
+    'post-preview-2.png',
+  ].map((filename) => `${baseUrl}/${filename}`);
   return (
     <section
-      className="p-4 sm:p-6 md:p-10 scroll-mt-14 lg:p-20 w-[100vw] bg-primary text-dark-txt"
+      className="p-4 sm:p-6 md:p-10 lg:p-20 w-[100vw] bg-primary text-dark-txt"
       aria-label="Projects Section"
       id="projects"
     >
       <h3 className="font-bold text-3xl sm:text-4xl text-center md:text-5xl md:mb-10">
         Projects
       </h3>
+      <div className='grid gap-10'>
       <div className="lg:grid intersect-once intersect:motion-preset-slide-up lg:grid-cols-5 lg:grid-flow-col lg:items-center lg:text-right text-center gap-6 max-w-7xl mx-auto">
         <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col lg:col-span-2 lg:justify-center text-center lg:text-right">
           <h5 className="font-semibold text-xl sm:text-2xl md:text-3xl pb-4 md:pb-5">
@@ -46,9 +53,33 @@ const ProjectSection = () => {
         </div>
         <div className="flex justify-center lg:justify-end col-span-3">
           <div className="rounded-lg overflow-hidden max-w-3xl w-full m-auto">
-            <ImageSlider imgUrls={images} />
+            <ImageSlider imgUrls={tscfImages} />
           </div>
         </div>
+      </div>
+      <div className="lg:grid intersect-once intersect:motion-preset-slide-up lg:grid-cols-5 lg:grid-flow-col lg:items-center lg:text-right text-center gap-6 max-w-7xl mx-auto">
+        <div className="p-4 sm:p-6 md:p-8 lg:p-10 flex flex-col lg:col-span-2 lg:justify-center text-center lg:text-right">
+          <h5 className="font-semibold text-xl sm:text-2xl md:text-3xl pb-4 md:pb-5">
+            Personal Blog
+          </h5>
+
+          <p className="font-light text-lg sm:text-xl md:text-2xl mb-4 md:mb-5">
+            I made a blog using Hugo and Blowfish theme to share my thoughts and experiences on tech. I deployed it using Cloudflare Workers. I have implemented CI/CD and automated the deployment process.
+          </p>
+          <div className="flex justify-center lg:justify-end items-center gap-4 sm:gap-6">
+            <LinkButtonFilled
+              icon={SiGithub}
+              href="https://github.com/ashlin-a/personal-blog"
+              text="Repo Link"
+            />
+          </div>
+        </div>
+        <div className="flex justify-center lg:justify-end col-span-3">
+          <div className="rounded-lg overflow-hidden max-w-3xl w-full m-auto">
+            <ImageSlider imgUrls={blogImages} />
+          </div>
+        </div>
+      </div>
       </div>
     </section>
   );
